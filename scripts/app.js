@@ -21,7 +21,7 @@ $(document).ready(function () {
     
     //Get tournaments
     function getTournaments(game, amount, location) {
-        var psKey = "RtNbglsDqX2pPUZIyGNsGqkWqXozcjYULHffv0Okx2HQidOPryc";
+        var psKey = "";
         var psPARAM = game;
         var perPage = amount;
         var psURL = "https://cors-anywhere.herokuapp.com/https://api.pandascore.co" + psPARAM + "?per_page=" + perPage + "&token=" + psKey;
@@ -135,7 +135,7 @@ $(document).ready(function () {
         var twitchLimit = amount; 
         var twitchStreams = "https://cors-anywhere.herokuapp.com/https://api.twitch.tv/kraken/streams/?game=" + twitchQuery + "&limit=" + twitchLimit  + "&api_version=5&language=en";
         
-        var twitchId = "5im67pxtrmahhr4u8f270ntw5l5srp";
+        var twitchId = "";
         
         $.ajax({
             type: "GET",
